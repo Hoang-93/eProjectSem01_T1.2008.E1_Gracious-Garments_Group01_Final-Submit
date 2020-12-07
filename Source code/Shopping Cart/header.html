@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/homepage/assets/css/exam.css">
+</head>
+<body>
+      <!--navbar-->    
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning ">
+    <a class="navbar-brand" href="/homepage/Gracious_Garments.html">Gracious Garments</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto topnav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/homepage/index.html"><i class="fa fa-home"></i>Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a  class="dropdown-item" href="/homepage/Gracious_Garments.html">Gracious_Garments</a>
+                  <a class="dropdown-item" href="/homepage/Compare/compare.html">Compare products</a>                                             
+                  
+              </div>
+          </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Brands
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/homepage/Gucci.html">Gucci</a>                                             
+                  <a class="dropdown-item" href="/homepage/Chanel.html">Chanel</a>
+                  <a class="dropdown-item" href="/homepage/D&G.html">D&G</a>
+              </div>
+          </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="/homepage/Shop location and contact us/02_Contact Us.html">Contact Us</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/homepage/Shopping Cart/shopping_cart.html">Shopping Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/homepage/Shop location and contact us/01_Shop_Location.html">Shop Location</a>
+          </li>
+            
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white" type="button" href="#" data-toggle="modal" data-target="#myModal1-1">Sign In</a>                  
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-danger text-white" type="button" href="#" data-toggle="modal" data-target="#myModal1-2">Register</a>
+            </li>
+        </ul>
+    </div>
+
+        <!-- The Modal -->
+<div class="modal" id="myModal1-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Customer Sign In</h4>
+                <button type="button" class="close" data-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form>
+                    <label class="sr-only" for="usrname">Username</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <label class="sr-only" for="Password">Name</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                        </div>
+                        <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" >Sign In</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- The Modal -->
+<div class="modal" id="myModal1-2">
+  <div class="modal-dialog">
+      <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+              <h4 class="modal-title">Customer Register</h4>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+              <form>
+                  <label class="sr-only" for="usrname">Username</label>
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+
+
+                  <label class="sr-only" for="Password">Name</label>
+                  <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                      </div>
+                      <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                  </div>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                    </div>
+                    <input id="Password" type="password" class="form-control" placeholder="Repassword" aria-label="Password" aria-describedby="basic-addon2">
+                </div>
+              </form>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" >Register</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+      </div>
+  </div>
+</div>
+        
+
+</nav>
+  <!-- end nav-->
+  <!-- <section class="sub">
+    <div class="container py-5 text-white">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="row">
+              <div class="col-lg-2">
+                <span><i class="fas fa-sync-alt"></i></span>
+              </div>
+              <div class="col-lg-10">
+                <h5 class="onclick">Return $ Exchange</h5>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="row">
+            <div class="col-lg-2">
+              <span><i class="fas fa-gift"></i></span>
+            </div>
+            <div class="col-lg-10">
+              <h5 class="onclick">Received Gift Card</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="row">
+            <div class="col-lg-2">
+              <span><i class="fas fa-user-shield"></i></span>
+            </div>
+            <div class="col-lg-10">
+              <h5 class="onclick">Online Support</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="row">
+            <input type="text" name="" id="" placeholder="Your Email">
+            <button class="btn1">Subcricle</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End collect exchange-->
+</body>
+</html>

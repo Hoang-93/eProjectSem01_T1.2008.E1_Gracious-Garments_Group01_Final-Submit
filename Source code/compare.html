@@ -1,0 +1,884 @@
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products Comparison</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="./assets/css/compare.css">
+<script src="./assets/js/compare.js"></script>
+</head>
+<body onload="filterSelection('MH')">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="index.html">Gracious Garments</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto topnav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i>Home </a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a  class="dropdown-item " href="Gracious_Garments.html">Gracious_Garments</a>
+                        <a class="dropdown-item" href="./compare.html">Compare products</a>                                             
+                        
+                    </div>
+                </li>
+      
+      
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Brands
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Gucci.html">Gucci</a>                                             
+                        <a class="dropdown-item" href="Chanel.html">Chanel</a>
+                        <a class="dropdown-item" href="D&G.html">D&G</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./02_Contact Us.html">Contact Us</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="./Shopping Cart/shopping_cart.html">Shopping Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./01_Shop_Location.html">Shop Location</a>
+              </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link btn-primary text-white" type="button" href="#" data-toggle="modal" data-target="#myModal1-1">Sign In</a>                  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-danger text-white" type="button" href="#" data-toggle="modal" data-target="#myModal1-2">Register</a>
+                </li>
+            </ul>
+        </div>
+    
+            <!-- The Modal -->
+    <div class="modal" id="myModal1-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Customer Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <label class="sr-only" for="usrname">Username</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <label class="sr-only" for="Password">Name</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                            </div>
+                            <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                        </div>
+                    </form>
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" >Sign In</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal1-2">
+      <div class="modal-dialog">
+          <div class="modal-content">
+    
+              <!-- Modal Header -->
+              <div class="modal-header">
+                  <h4 class="modal-title">Customer Register</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+    
+              <!-- Modal body -->
+              <div class="modal-body">
+                  <form>
+                      <label class="sr-only" for="usrname">Username</label>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+    
+    
+                      <label class="sr-only" for="Password">Name</label>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                          </div>
+                          <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                      </div>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                        </div>
+                        <input id="Password" type="password" class="form-control" placeholder="Repassword" aria-label="Password" aria-describedby="basic-addon2">
+                    </div>
+                  </form>
+              </div>
+    
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" >Register</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+    
+          </div>
+      </div>
+    </div>
+            
+    
+    </nav>
+    <!--collect exchange-->  
+  <section class="sub">
+    <div class="container py-5 text-white">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="row">
+              <div class="col-lg-2">
+                <span><i class="fas fa-sync-alt"></i></span>
+              </div>
+              <div class="col-lg-10">
+                <h5 class="onclick">Return $ Exchange</h5>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="row">
+            <div class="col-lg-2">
+              <span><i class="fas fa-gift"></i></span>
+            </div>
+            <div class="col-lg-10">
+              <h5 class="onclick">Received Gift Card</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="row">
+            <div class="col-lg-2">
+              <span><i class="fas fa-user-shield"></i></span>
+            </div>
+            <div class="col-lg-10">
+              <h5 class="onclick">Online Support</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Crumn-->
+  <section class="bcrumb">
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Product</a></li>
+        <li style="color: rgb(119, 115, 115);">Compare Product</li>
+      </ul>
+</section>
+  <!--End Crumn-->
+<div id="header"></div>
+<h2>COMPARE PRODUCTS</h2>
+
+<div id="myBtnContainer">
+    <button class="btn" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('MH')"> Men Hoodie</button>
+    <button class="btn" onclick="filterSelection('MS')"> Men Shirt</button>
+    <button class="btn" onclick="filterSelection('WH')"> Women Hoodie</button>
+    <button class="btn" onclick="filterSelection('WS')"> Women Shirt</button>
+    <button class="btn" onclick="filterSelection('KT')"> Kid</button>
+  </div>   
+
+<section class="cd-products-comparison-table">
+  <!-- <div class="actions">
+      <a href="#0" class="reset">Reset</a>
+      <a href="#0" class="filter">Filter</a>
+  </div>    -->
+  <div class="cd-products-table">
+      <div class="features">
+          <div class="top-info">Product</div>
+          <ul class="cd-features-list">          
+              <li>Brand</li>
+              <li>Condition</li>
+              <li>Fabrication</li>
+              <li>Price</li>
+              <li>Full Description</li>
+          </ul>
+      </div> <!-- .features -->
+      <div class="cd-products-wrapper">
+          <ul class="cd-products-columns">
+              <li class="product filterDiv MH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MH001.PNG" alt="product image">
+                      <h3>Champion Men’s Powerblend® Fleece Full Zip Jacket</h3>
+                  </div> <!-- .top-info -->
+
+                  <ul class="cd-features-list">
+                      <li>Champion</li>
+                      <li>New</li>
+                      <li>fleece</li>
+                      <li>$19.75</li>
+                      <li><a href="./assets/DATA/MH001.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+              <li class="product filterDiv MH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MH002.PNG" alt="product image">
+                      <h3>Hanes ComfortBlend® EcoSmart® Full Zip Hoodie</h3>
+                  </div> <!-- .top-info -->
+
+                  <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>Used</li>
+                      <li>None</li>
+                      <li>$12.50</li>
+                      <li><a href="./assets/DATA/MH002.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MH003.PNG" alt="product image">
+                      <h3>Hanes ComfortBlend® EcoSmart® Pullover Hoodie Sweatshirt</h3>
+                  </div> <!-- .top-info -->
+
+                  <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>Used</li>
+                      <li>None</li>
+                      <li>$10.00</li>
+                      <li><a href="./assets/DATA/MH003.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MH004.PNG" alt="product image">
+                      <h3>Hanes ComfortBlend® EcoSmart® Pullover Hoodie Sweatshirt</h3>
+                  </div> <!-- .top-info -->
+
+                  <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>New</li>
+                      <li>None</li>
+                      <li>$25.00</li>
+                      <li><a href="./assets/DATA/MH004.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MH005.PNG" alt="product image">
+                      <h3>Hanes Men’s Nano Premium Lightweight Pullover Hoodie</h3>
+                  </div> <!-- .top-info -->
+
+                  <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>Used</li>
+                      <li>fleece</li>
+                      <li>$7.50</li>
+                      <li><a href="./assets/DATA/MH005.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MH006.PNG" alt="product image">
+                      <h3>Hanes Men’s Heavyweight Full Zip Hoodie</h3>
+                  </div> <!-- .top-info -->
+
+                  <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>New</li>
+                      <li>Cotton</li>
+                      <li>$35.00</li>
+                      <li><a href="./assets/DATA/MH006.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MH007.PNG" alt="product image">
+                      <h3>Hanes Men’s Ultimate Cotton® Heavyweight Pullover Hoodie</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>New</li>
+                      <li>Cotton</li>
+                      <li>$29.00</li>
+                      <li><a href="./assets/DATA/MH007.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MS001.PNG" alt="product image">
+                      <h3>SubliVie™ Adult 100% Blackout Crew Neck Short Sleeve Tee</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>SubliVie</li>
+                      <li>Used</li>
+                      <li>Polyester</li>
+                      <li>$14.00</li>
+                      <li><a href="./assets/DATA/MS001.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MS002.PNG" alt="product image">
+                      <h3>Code Five™ Adult Camouflage Hooded Sweatshirt</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Code Five</li>
+                      <li>New</li>
+                      <li>Cotton, Fleece, Polyester</li>
+                      <li>$45.00</li>
+                      <li><a href="./assets/DATA/MS002.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MS003.PNG" alt="product image">
+                      <h3>Code Five™ Adult Camouflage Crew Neck Short Sleeve Tee</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Code Five</li>
+                      <li>New</li>
+                      <li>Cotton, jersey</li>
+                      <li>$32.00</li>
+                      <li><a href="./assets/DATA/MS003.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MS004.PNG" alt="product image">
+                      <h3>Code Five™ Adult Camouflage Crew Neck Short Sleeve Tee</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Code Five</li>
+                      <li>New</li>
+                      <li>Cotton, Jersey</li>
+                      <li>$31.00</li>
+                      <li><a href="./assets/DATA/MS004.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MS005.PNG" alt="product image">
+                      <h3>LAT™ Adult Harborside Melange French Terry Crew Neck</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>LAT</li>
+                      <li>Used</li>
+                      <li>Cotton, polyester, terrycloth</li>
+                      <li>$10.00</li>
+                      <li><a href="./assets/DATA/MS005.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MS006.PNG" alt="product image">
+                      <h3>LAT™ Adult Harborside Melange French Terry Crew Neck</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>LAT</li>
+                      <li>New</li>
+                      <li>Cotton, polyester, terrycloth</li>
+                      <li>$21.00</li>
+                      <li><a href="./assets/DATA/MS006.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv MS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/MS007.PNG" alt="product image">
+                      <h3>LAT™ Adult Harborside Melange French Terry Crew Neck</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>LAT</li>
+                      <li>New</li>
+                      <li>Cotton, polyester, terrycloth</li>
+                      <li>$17.50</li>
+                      <li><a href="./assets/DATA/MS007.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WH001.PNG" alt="product image">
+                      <h3>Hanes Women's Ugly Christmas Fleece Sweatshirt</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>Used</li>
+                      <li>None</li>
+                      <li>$20.00</li>
+                      <li><a href="./assets/DATA/WH001.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WH002.PNG" alt="product image">
+                      <h3>Champion Women Heritage Fleece Zip Hoodie</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Champion</li>
+                      <li>New</li>
+                      <li>Fleece</li>
+                      <li>$21.00</li>
+                      <li><a href="./assets/DATA/WH002.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WH003.PNG" alt="product image">
+                      <h3>Champion Women’s Plus French Terry Full Zip Hoodie</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Champion</li>
+                      <li>Used</li>
+                      <li>None</li>
+                      <li>$10.00</li>
+                      <li><a href="./assets/DATA/WH003.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WH004.PNG" alt="product image">
+                      <h3>Champion Women Technical Heather 3-In-1 Jacket With Liner</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Champion</li>
+                      <li>New</li>
+                      <li>polyester</li>
+                      <li>$20.00</li>
+                      <li><a href="./assets/DATA/WH004.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WH005.PNG" alt="product image">
+                      <h3>Champion Women’s Fleece Full Zip Hoodie</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Champion</li>
+                      <li>New</li>
+                      <li>polyester</li>
+                      <li>$20.00</li>
+                      <li><a href="./assets/DATA/WH005.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WH">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WH006.PNG" alt="product image">
+                      <h3>Hanes ComfortSoft EcoSmart Women Full-Zip Hoodie Sweatshirt</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>New</li>
+                      <li>polyester</li>
+                      <li>$20.00</li>
+                      <li><a href="./assets/DATA/WH006.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WS001.PNG" alt="product image">
+                      <h3>Champion Women Heritage Fleece Crew Neck Long Sleeve T-Shirt</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Champion</li>
+                      <li>New</li>
+                      <li>Cotton, polyester, rib trim</li>
+                      <li>$20.00</li>
+                      <li><a href="./assets/DATA/WS001.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WS002.PNG" alt="product image">
+                      <h3>Champion Women Premium Tech Fleece Full Zip</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>New</li>
+                      <li>Cotton, polyester, rib trim</li>
+                      <li>$19.50</li>
+                      <li><a href="./assets/DATA/WS002.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WS003.PNG" alt="product image">
+                      <h3>Champion Women Premium Tech Fleece</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Champion</li>
+                      <li>Used</li>
+                      <li>Cotton</li>
+                      <li>$9.00</li>
+                      <li><a href="./assets/DATA/WS003.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WS004.PNG" alt="product image">
+                      <h3>Hanes ComfortSoft</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>New</li>
+                      <li>Gram, Cotton, Polyester</li>
+                      <li>$20.00</li>
+                      <li><a href="./assets/DATA/WS004.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WS005.PNG" alt="product image">
+                      <h3>Hanes Women's Ugly Christmas Fleece Sweatshirt</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>New</li>
+                      <li>Cotton, Fleece, Polyester</li>
+                      <li>$20.00</li>
+                      <li><a href="./assets/DATA/WS005.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv WS">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/WS006.PNG" alt="product image">
+                      <h3>Hanes ComfortSoft EcoSmart V-Notch Crewneck Women Sweatshirt</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>Hanes</li>
+                      <li>New</li>
+                      <li>Cotton, Fleece, Polyester</li>
+                      <li>$19.00</li>
+                      <li><a href="./assets/DATA/WS006.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv KT">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/KT001.PNG" alt="product image">
+                      <h3>LAT™ Girls’ Fine Jersey Scoop Neck Tank Top</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>LAT</li>
+                      <li>New</li>
+                      <li>Cotton, jersey</li>
+                      <li>$20.00</li>
+                      <li><a href="./assets/DATA/KT001.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv KT">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/KT002.PNG" alt="product image">
+                      <h3>LAT™ Girls’ Fine Jersey Scoop Neck Tank Top</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                          <li>LAT</li>
+                          <li>New</li>
+                          <li>Cotton, jersey</li>
+                          <li>$20.00</li>
+                          <li><a href="./assets/DATA/KT002.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv KT">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/KT003.PNG" alt="product image">
+                      <h3>LAT™ Girls’ Fine Jersey Scoop Neck Tank Top</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                          <li>LAT</li>
+                          <li>Used</li>
+                          <li>Cotton, jersey</li>
+                          <li>$10.00</li>
+                          <li><a href="./assets/DATA/KT003.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv KT">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/KT004.PNG" alt="product image">
+                      <h3>LAT™ Girls’ Fine Jersey Scoop Neck Tank Top</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                          <li>LAT</li>
+                          <li>Used</li>
+                          <li>Cotton, jersey</li>
+                          <li>$12.50</li>
+                          <li><a href="./assets/DATA/KT004.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv KT">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/KT005.PNG" alt="product image">
+                      <h3>LAT™ Youth Contrast Back Fine Jersey Tank</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>LAT</li>
+                      <li>New</li>
+                      <li>Cotton, Jersey, Polyester</li>
+                      <li>$9.99</li>
+                      <li><a href="./assets/DATA/KT005.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv KT">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/KT006.PNG" alt="product image">
+                      <h3>LAT™ Youth Contrast Back Fine Jersey Tank</h3>
+                  </div> 
+                  <!-- .top-info -->
+                      <ul class="cd-features-list">
+                      <li>LAT</li>
+                      <li>New</li>
+                      <li>Cotton, Jersey, Polyester</li>
+                      <li>$20.00</li>
+                      <li><a href="./assets/DATA/KT006.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              <!-- .product -->
+
+              <li class="product filterDiv KT">
+                  <div class="top-info">
+                      <!-- <div class="check"></div> -->
+                      <img src="./image/PIC/KT007.PNG" alt="product image">
+                      <h3>LAT™ Youth Contrast Back Fine Jersey Tank</h3>
+                  </div> 
+                  <!--top-info -->
+                      <ul class="cd-features-list">
+                      <li>LAT</li>
+                      <li>New, Used</li>
+                      <li>Cotton, Jersey, Polyester</li>
+                      <li>$20.00</li>
+                      <li><a href="./assets/DATA/KT007.docx" download>Download</a></li>
+                  </ul>
+              </li> 
+              
+          </ul> <!-- .cd-products-columns -->
+      </div> <!-- .cd-products-wrapper -->
+  </div> <!-- .cd-products-table -->
+
+</section> <!-- .cd-products-comparison-table -->
+
+
+
+<footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Gracious_Garments</h3>
+            <p>
+              Le Thanh Ton Street <br>
+              Quan 5<br>
+              Viet Nam <br><br>
+              <strong>Phone:</strong> +94 936615044<br>
+              <strong>Email:</strong>Hoangtpt1993@gmail.com<br>
+            </p>
+          </div>
+  
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Any feedback please fill out the information below</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="container d-md-flex py-4">
+  
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span></span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-skype"></i></a>
+        
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

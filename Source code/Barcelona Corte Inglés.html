@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Barcelona Corte Inglés</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+/* Create 02 columns */
+        .column {
+        float: left;
+        padding: 10px;
+        }
+    /* Left columns */
+        .column.left {
+        font-size:15pt;
+        width: 25%;
+        }
+    /* Right columns */
+        .column.right {
+        font-size:15pt;
+        
+        }
+    /* Clear floats after the columns*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+/*# Footer--------------------------------------------------------------*/
+#footer {
+  color: #444444;
+  font-size: 14px;
+  background: #f1f0f2;
+  margin-top: 20px;
+  clear: left;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #f9f8f9;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h4 {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #777777;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #00c28e;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #009970;
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  border: 1px solid #e4e3e6;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #009970;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: #00664b;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #444444;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #009970;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #00805d;
+  color: #fff;
+  text-decoration: none;
+}
+
+</style>
+
+</head>
+<body>
+    <!--header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning ">
+        <a class="navbar-brand" href="#">Gracious Garments</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto topnav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i>Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a  class="dropdown-item" href="Gracious_Garments.html">Gracious_Garments</a>
+                      <a class="dropdown-item" href="./compare.html">Compare products</a>                                             
+                      
+                  </div>
+              </li>
+    
+    
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Brands
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="Gucci.html">Gucci</a>                                             
+                      <a class="dropdown-item" href="Chanel.html">Chanel</a>
+                      <a class="dropdown-item" href="D&G.html">D&G</a>
+                  </div>
+              </li>
+    
+    
+                <li class="nav-item">
+                    <a class="nav-link active" href="02_Contact Us.html">Contact Us</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="shopping_cart.html">Shopping Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="01_Shop_Location.html">Shop Location</a>
+              </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary text-white" type="button" href="#" data-toggle="modal" data-target="#myModal1-1">Sign In</a>                  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-danger text-white" type="button" href="#" data-toggle="modal" data-target="#myModal1-2">Register</a>
+                </li>
+            </ul>
+        </div>
+    
+            <!-- The Modal -->
+    <div class="modal" id="myModal1-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Customer Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <label class="sr-only" for="usrname">Username</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <label class="sr-only" for="Password">Name</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                            </div>
+                            <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                        </div>
+                    </form>
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" >Sign In</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal1-2">
+      <div class="modal-dialog">
+          <div class="modal-content">
+    
+              <!-- Modal Header -->
+              <div class="modal-header">
+                  <h4 class="modal-title">Customer Register</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+    
+              <!-- Modal body -->
+              <div class="modal-body">
+                  <form>
+                      <label class="sr-only" for="usrname">Username</label>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+    
+    
+                      <label class="sr-only" for="Password">Name</label>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                          </div>
+                          <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                      </div>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                        </div>
+                        <input id="Password" type="password" class="form-control" placeholder="Repassword" aria-label="Password" aria-describedby="basic-addon2">
+                    </div>
+                  </form>
+              </div>
+    
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" >Register</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+    
+          </div>
+      </div>
+    </div>
+    </nav>
+
+
+
+
+
+    <h3>Welcome to Barcelona Corte Inglés</h3>
+<!--Article-->       
+    <!--Column Left-Address -->      
+    <div class="row">
+        <div class="column left">
+
+            <h4>Address:</h4>
+            <table>
+                <tr>
+                    <td>Location: </td>
+                    <td> Avinguda Diagonal, 617.</td>
+                </tr>
+                <tr>
+                    <td>Telephone:</td>
+                    <td> +34 93 4193641</td>
+                </tr>
+            </table>
+            <h4>Opening house:</h4>
+            <table>
+                <tr>
+                    <td>Monday:</td>
+                    <td>10:00 am - 08:00 pm;</td>
+                </tr>
+                <tr>
+                    <td>Tuesday:</td>
+                    <td>10:00 am - 08:00 pm;</td>
+                </tr>
+                <tr>
+                    <td>Wednesday:</td>
+                    <td>10:00 am - 08:00 pm;</td>
+                </tr>
+                <tr>
+                    <td>Thursday:</td>
+                    <td>10:00 am - 08:00 pm;</td>
+                </tr>
+                <tr>
+                    <td>Friday:</td>
+                    <td>10:00 am - 08:00 pm;</td>
+                </tr>
+                <tr>
+                    <td>Saturday:</td>
+                    <td>10:00 am - 08:00 pm;</td>
+                </tr>
+                <tr>
+                    <td>Sunday:</td>
+                    <td>10:00 am - 01:00 pm;</td>
+                </tr>
+            </table>
+            <h4>Available items:</h4>
+            <table>
+                <tr>
+                    <td>Bag</td>
+                    <td></td>
+                    <td>Fragrances</td>
+                </tr>
+                <tr>
+                    <td>Shoes </td>
+                    <td></td>
+                    <td>Underwear</td>
+                </tr>
+                <tr>
+                    <td>Office</td>
+                    <td></td>
+                    <td> Sunglasses</td>
+                </tr>
+            </table>
+        </div>
+   
+         <!--Column Right - Maps location-->      
+
+        <div class="column right" >
+         
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4000075861186!2d106.66847631411649!3d10.780644162065373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed74dbc0921%3A0x916e5e15133ccc51!2zNTIxLzkxIEPDoWNoIE3huqFuZyBUaMOhbmcgVMOhbSwgUGjGsOG7nW5nIDEzLCBRdeG6rW4gMTAsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1603375174892!5m2!1svi!2s" 
+            width="870" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+<!--Footer--> 
+    <footer id="footer">
+        <div class="footer-top">
+           <div class="container-fluid">
+             <div class="row">   
+               <div class="col-lg-3 col-md-6 footer-contact">
+                 <h3>Gracious_Garments</h3>
+                 <p>
+                   Le Thanh Ton Street <br>
+                   Quan 5<br>
+                   Viet Nam <br><br>
+                   <strong>Phone:</strong> +94 936615044<br>
+                   <strong>Email:</strong>Hoangtpt1993@gmail.com<br>
+                 </p>
+               </div>    
+               <div class="col-lg-2 col-md-6 footer-links">
+                 <h4>Useful Links</h4>
+                 <ul>
+                   <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                   <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                   <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                   <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                   <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                 </ul>
+               </div>
+       
+               <div class="col-lg-3 col-md-6 footer-links">
+                 <h4>Our Services</h4>
+                 <ul>
+                   <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                   <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                   <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                   <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                   <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                 </ul>
+               </div>
+       
+               <div class="col-lg-4 col-md-6 footer-newsletter">
+                 <h4>Join Our Newsletter</h4>
+                 <p>Any feedback please fill out the information below</p>
+                 <form action="" method="post">
+                   <input type="email" name="email"><input type="submit" value="Subscribe">
+                 </form>
+               </div>
+       
+             </div>
+           </div>
+         </div>
+       
+         <div class="container d-md-flex py-4">
+       
+           <div class="mr-md-auto text-center text-md-left">
+             <div class="copyright">
+               &copy; Copyright <strong><span></span></strong>. All Rights Reserved
+             </div>
+             <div class="credits">
+             </div>
+           </div>
+           <div class="social-links text-center text-md-right pt-3 pt-md-0">
+             <a href="#" class="twitter"><i class="fa fa-facebook"></i></a>
+             <a href="#" class="facebook"><i class="fa fa-twitter"></i></a>
+             <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+             <a href="#" class="google-plus"><i class="fa fa-skype"></i></a>
+             
+           </div>
+         </div>
+       </footer><!-- End Footer -->
+
+</body>
+</html>

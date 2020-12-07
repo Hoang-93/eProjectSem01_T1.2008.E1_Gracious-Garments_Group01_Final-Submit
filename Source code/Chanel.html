@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="./assets/css/product.css">
+<script src="./assets/js/exam.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top  ">
+        <a class="navbar-brand" href="index.html">Gracious Garments</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto topnav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i>Home </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a  class="dropdown-item" href="Gracious_Garments.html">Gracious_Garments</a>
+                        <a class="dropdown-item" href="./compare.html">Compare products</a>                                             
+                        
+                    </div>
+                </li>
+      
+      
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Brands
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Gucci.html">Gucci</a>                                             
+                        <a class="dropdown-item" href="Chanel.html">Chanel</a>
+                        <a class="dropdown-item" href="D&G.html">D&G</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./02_Contact Us.html">Contact Us</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="./Shopping Cart/shopping_cart.html">Shopping Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./01_Shop_Location.html">Shop Location</a>
+              </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary text-white" type="button" href="#" data-toggle="modal" data-target="#myModal1-1">Sign In</a>                  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-danger text-white" type="button" href="#" data-toggle="modal" data-target="#myModal1-2">Register</a>
+                </li>
+            </ul>
+        </div>
+    
+            <!-- The Modal -->
+    <div class="modal" id="myModal1-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Customer Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <label class="sr-only" for="usrname">Username</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <label class="sr-only" for="Password">Name</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                            </div>
+                            <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                        </div>
+                    </form>
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" >Sign In</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal1-2">
+      <div class="modal-dialog">
+          <div class="modal-content">
+    
+              <!-- Modal Header -->
+              <div class="modal-header">
+                  <h4 class="modal-title">Customer Register</h4>
+                  <button type="button" class="close" data-dismiss="modal"></button>
+              </div>
+    
+              <!-- Modal body -->
+              <div class="modal-body">
+                  <form>
+                      <label class="sr-only" for="usrname">Username</label>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+    
+    
+                      <label class="sr-only" for="Password">Name</label>
+                      <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                          </div>
+                          <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                      </div>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                        </div>
+                        <input id="Password" type="password" class="form-control" placeholder="Repassword" aria-label="Password" aria-describedby="basic-addon2">
+                    </div>
+                  </form>
+              </div>
+    
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" >Register</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+    
+          </div>
+      </div>
+    </div>
+            
+    
+    </nav>
+    <!--collect exchange-->
+    
+  <section class="sub">
+    <div class="container py-5 text-white">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="row">
+              <div class="col-lg-2">
+                <span><i class="fas fa-sync-alt"></i></span>
+              </div>
+              <div class="col-lg-10">
+                <h5 class="onclick">Return $ Exchange</h5>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="row">
+            <div class="col-lg-2">
+              <span><i class="fas fa-gift"></i></span>
+            </div>
+            <div class="col-lg-10">
+              <h5 class="onclick">Received Gift Card</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="row">
+            <div class="col-lg-2">
+              <span><i class="fas fa-user-shield"></i></span>
+            </div>
+            <div class="col-lg-10">
+              <h5 class="onclick">Online Support</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End collect exchange-->
+  <!--Crumn-->
+  <section class="bcrumb col-md-12 ">
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Brand</a></li>
+        <li style="color: rgb(119, 115, 115);">Chanel</li>
+      </ul>
+</section>
+  <!--End Crumn-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <section class="panel">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search products...">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-primary" type="submit">
+                                    <i class="fa fa-search"></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>                        
+                    </div>                   
+                </section>
+                <section class="panel">
+                    <header class="panel-heading">
+                        <h3>Category</h3>
+                        <br>
+                    </header>
+                    <div class="panel-body">
+                        <div class="list-group">                         
+                                <a href="#" class="list-group-item active"><i class="fa fa-angle-right"></i> Dress</a>                                                                              
+                                <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Beauty</a>                                                    
+                                <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Coat &amp; Jacket</a>                                         
+                                <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Jeans</a>                                                                                                                                                                                    
+                                <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i>  Sports</a>                                                                                                                                                                                                                                                 
+                        </div>
+                    </div>
+                </section>              
+                <section class="panel">
+                    <header class="panel-heading">
+                        Filter
+                    </header>
+                    <div class="panel-body">
+                        <form name="form1" id="form1" action="/action_page.php">
+                            <label for="">Brand</label><br>
+                             <select name="brand" id="brand"class="col-md-12 sell">
+                              <option value="" selected="selected" >Please select brand</option>
+                            </select>
+                            <label for="">Color</label><br>
+                            <select name="color" id="color" class="col-md-12 sell">
+                              <option value="" selected="selected">Please select color</option>
+                            </select>
+                            <label for="">Type</label><br>
+                             <select name="type" id="type" class="col-md-12 sell">
+                              <option value="" selected="selected">Please select type</option>
+                            </select>
+                            <br><br>
+                            <input type="submit" value="Submit" class="btn btn-info">
+                          </form>
+                    </div>
+                </section> 
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#">
+                            <img class="pic-1" src="./image/img-product/img-3.jpg">
+                            <img class="pic-2" src="./image/img-product/img-4.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">Sale</span>
+                        <span class="product-discount-label">20%</span>
+                    </div>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star disable"></li>
+                    </ul>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#"> Men's Plain Tshirt</a></h3>
+                        <div class="price">$16.00
+                            <span>$20.00</span>
+                        </div>
+                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                    </div>
+                </div>
+                
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#">
+                            <img class="pic-1" src="./image/img-product/img-1.jpg">
+                            <img class="pic-2" src="./image/img-product/img-2.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">Sale</span>
+                        <span class="product-discount-label">50%</span>
+                    </div>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Women's Blouse</a></h3>
+                        <div class="price">$5.00
+                            <span>$10.00</span>
+                        </div>
+                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                    </div>
+                </div>
+                <!--end-->
+            </div>
+            <div class="col-9 ">
+                <h2 style="text-align-center; color:hotpink; font-weight:200;"> Best Seller In Month</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                   
+                          <div class="row">
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-5.jpg">
+                                          
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">10%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Fashion</a></h3>
+                                        <div class="price">$18.00
+                                            <span>$20.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-6.jpg">
+                                           
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">20%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men Tshirt</a></h3>
+                                        <div class="price">$15.00
+                                            <span>$30.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-7.jpg">
+                                           
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">30%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Fashion</a></h3>
+                                        <div class="price">$42.00
+                                            <span>$60.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-8.jpg">
+                                            
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">10%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men Fashion</a></h3>
+                                        <div class="price">$17.00
+                                            <span>$30.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                        </div>                                                                                                                                                                                         
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-9.jpg">
+                                            
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">30%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men Tshirt</a></h3>
+                                        <div class="price">$45.00
+                                            <span>$50.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-10.jpg">
+                                            
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">20%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men Blouse</a></h3>
+                                        <div class="price">$16.00
+                                            <span>$20.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-11.jpg">
+                                            
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">40%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Blouse</a></h3>
+                                        <div class="price">$30.00
+                                            <span>$50.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-12.jpeg">
+                                            
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">30%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Blouse</a></h3>
+                                        <div class="price">$45.00
+                                            <span>$50.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                        </div>
+                            
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-13.jpg">
+                                            
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">30%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Fashion</a></h3>
+                                        <div class="price">$42.00
+                                            <span>$60.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-14 .jpg">
+                                           
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">10%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men Tshirt</a></h3>
+                                        <div class="price">$18.00
+                                            <span>$20.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-15.jpeg">
+                                            
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">30%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Fashion</a></h3>
+                                        <div class="price">$45.00
+                                            <span>$50.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                            <div class="col-md-3">
+                                <div class="product-grid">
+                                    <div class="product-image">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/img-16.jpeg">
+                                            
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                            <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <span class="product-new-label">Sale</span>
+                                        <span class="product-discount-label">10%</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star disable"></li>
+                                    </ul>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's T-shirt</a></h3>
+                                        <div class="price">$27.00
+                                            <span>$30.00</span>
+                                        </div>
+                                        <a class="add-to-cart" href="">+ Add To Cart</a>
+                                    </div>
+                                </div>                        
+                            </div> 
+                        </div>
+                            
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+                  <!--profico Category-->
+    
+                <div class="container-fluid" style="margin-top:20px;" >
+                    <h1 style="text-align:center;color:hotpink;">CHANEL FASHION</h1><br>
+                    <div class="row">
+                    
+                    
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="showall-tab" data-toggle="pill" href="#showall" role="tab" aria-controls="showall" aria-selected="true">All</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="Cars-tab" data-toggle="pill" href="#Cars" role="tab" aria-controls="Cars" aria-selected="false">Men</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="City-tab" data-toggle="pill" href="#City" role="tab" aria-controls="City" aria-selected="false">Women</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="Forest-tab" data-toggle="pill" href="#Forest" role="tab" aria-controls="Forest" aria-selected="false">Kid</a>
+                      </li>
+                    </ul>
+                    </div><hr noshade style="margin-top:-20px;">
+                    <div class="container">
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
+                        <div class="row">
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/style1.jpg">
+                                            <img class="pic-2" src="./image/img-product/style1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Vest Fashion</a></h3>
+                                        <span class="price">$100.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/style2.jpg">
+                                            <img class="pic-2" src="./image/img-product/style2.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men-Tshirt</a></h3>
+                                        <span class="price">$30.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment1.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Fashion</a></h3>
+                                        <span class="price">$100.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment2.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment2.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Tshirt</a></h3>
+                                        <span class="price">$20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid1.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$100.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid2.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid2.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$500.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/style3.jpg">
+                                            <img class="pic-2" src="./image/img-product/style3.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$120.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment3.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment3.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men Designer Top</a></h3>
+                                        <span class="price">$200.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid3.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid3.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$120.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid4.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid4.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$120.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment4.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment4.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$100.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/style4.jpg">
+                                            <img class="pic-2" src="./image/img-product/style4.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men's Designer Top</a></h3>
+                                        <span class="price">$599.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment5.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment5.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$120</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid5.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid5.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kid's Designer Top</a></h3>
+                                        <span class="price">$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/style5.jpg">
+                                            <img class="pic-2" src="./image/img-product/style5.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men's Designer Top</a></h3>
+                                        <span class="price">$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/style6.jpg">
+                                            <img class="pic-2" src="./image/img-product/style6.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men's Designer Top</a></h3>
+                                        <span class="price">$200</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid6.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid6.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kid's Designer </a></h3>
+                                        <span class="price">$500</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment6.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment6.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer</a></h3>
+                                        <span class="price">$200</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment7.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment7.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer </a></h3>
+                                        <span class="price">$190</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment8.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment8.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer </a></h3>
+                                        <span class="price">$390</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid7.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid7.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kid T-shirt</a></h3>
+                                        <span class="price">$200</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid8.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid8.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids T-shirt</a></h3>
+                                        <span class="price">$300</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/style7.jpg">
+                                            <img class="pic-2" src="./image/img-product/style7.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men Fashion</a></h3>
+                                        <span class="price">$199</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/style8.jpg">
+                                            <img class="pic-2" src="./image/img-product/style8.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Men Fashion</a></h3>
+                                        <span class="price">$300</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                                
+                            
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="tab-pane fade" id="Cars" role="tabpanel" aria-labelledby="Cars-tab">
+                       <div class="row">
+                        <div class="col-md-3 ">
+                            <div class="product-grid2">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./image/img-product/style1.jpg">
+                                        <img class="pic-2" src="./image/img-product/style1.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <a class="add-to-cart" href="">Add to cart</a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Men's fashion</a></h3>
+                                    <span class="price">$200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="product-grid2">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./image/img-product/style2.jpg">
+                                        <img class="pic-2" src="./image/img-product/style2.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <a class="add-to-cart" href="">Add to cart</a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Men's fashion</a></h3>
+                                    <span class="price">$230</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="product-grid2">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./image/img-product/style3.jpg">
+                                        <img class="pic-2" src="./image/img-product/style3.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <a class="add-to-cart" href="">Add to cart</a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Men's fashion</a></h3>
+                                    <span class="price">$320</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="product-grid2">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./image/img-product/style4.jpg">
+                                        <img class="pic-2" src="./image/img-product/style4.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <a class="add-to-cart" href="">Add to cart</a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Men's fashion</a></h3>
+                                    <span class="price">$200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="product-grid2">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./image/img-product/style5.jpg">
+                                        <img class="pic-2" src="./image/img-product/style5.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <a class="add-to-cart" href="">Add to cart</a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Men's fashion</a></h3>
+                                    <span class="price">$110</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="product-grid2">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./image/img-product/style6.jpg">
+                                        <img class="pic-2" src="./image/img-product/style6.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <a class="add-to-cart" href="">Add to cart</a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Men's fashion</a></h3>
+                                    <span class="price">$310</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="product-grid2">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./image/img-product/style7.jpg">
+                                        <img class="pic-2" src="./image/img-product/style7.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <a class="add-to-cart" href="">Add to cart</a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Men's fashion</a></h3>
+                                    <span class="price">$110</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="product-grid2">
+                                <div class="product-image2">
+                                    <a href="#">
+                                        <img class="pic-1" src="./image/img-product/style8.jpg">
+                                        <img class="pic-2" src="./image/img-product/style8.jpg">
+                                    </a>
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                        <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                    <a class="add-to-cart" href="">Add to cart</a>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="title"><a href="#">Men's fashion</a></h3>
+                                    <span class="price">$210</span>
+                                </div>
+                            </div>
+                        </div> 
+                       </div>
+                      </div>
+                      <div class="tab-pane fade" id="City" role="tabpanel" aria-labelledby="City-tab">
+                        <div class="row">
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment1.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$110</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment2.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment2.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$120</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment3.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment3.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$220</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment4.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment4.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$310</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment5.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment5.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$219</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment6.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment6.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment7.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment7.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$312</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/woment8.jpg">
+                                            <img class="pic-2" src="./image/img-product/woment8.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                        <span class="price">$220</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="Forest" role="tabpanel" aria-labelledby="Forest-tab">
+                        <div class="row">
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid1.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid1.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid2.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid2.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$220</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid3.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid3.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$134</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid4.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid4.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$221</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid5.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid5.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$111</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid6.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid6.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$312</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid7.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid7.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$220</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="product-grid2">
+                                    <div class="product-image2">
+                                        <a href="#">
+                                            <img class="pic-1" src="./image/img-product/kid8.jpg">
+                                            <img class="pic-2" src="./image/img-product/kid8.jpg">
+                                        </a>
+                                        <ul class="social">
+                                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                        <a class="add-to-cart" href="">Add to cart</a>
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="title"><a href="#">Kids Fashion</a></h3>
+                                        <span class="price">$134</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    
+                    </div>
+            <!--End col-9-->
+
+        </div>
+    </div>  
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Gracious_Garments</h3>
+            <p>
+              Le Thanh Ton Street <br>
+              Quan 5<br>
+              Viet Nam <br><br>
+              <strong>Phone:</strong> +94 936615044<br>
+              <strong>Email:</strong>Hoangtpt1993@gmail.com<br>
+            </p>
+          </div>
+  
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Any feedback please fill out the information below</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="container d-md-flex py-4">
+  
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span></span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-skype"></i></a>
+        
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <!--button top-->
+  <div class="scroll-up-btn" onclick="page_scroll()">
+    <i class="fa fa-angle-up">
+    </i>
+  </div>   
+    
+</body>
+</html>
